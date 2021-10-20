@@ -110,7 +110,7 @@ func scenario3() *Elevator {
 	column.elevatorsList[4].floorRequestsList = append(column.elevatorsList[4].floorRequestsList, 1)
 
 	chosenElevator := column.requestElevator(54, "down")
-	moveAllElevators(&column)
+	moveAllElevators(column)
 	return chosenElevator
 }
 
@@ -137,7 +137,7 @@ func scenario4() *Elevator {
 	column.elevatorsList[4].floorRequestsList = append(column.elevatorsList[4].floorRequestsList, -6)
 
 	chosenElevator := column.requestElevator(-3, "up")
-	moveAllElevators(&column)
+	moveAllElevators(column)
 	return chosenElevator
 }
 

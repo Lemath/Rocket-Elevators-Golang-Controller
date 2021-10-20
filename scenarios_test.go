@@ -1,7 +1,8 @@
 package main
 
 import (
-	"testing"
+	"testing";
+	"fmt"
 )
 
 func TestScenario1(t *testing.T) {
@@ -11,7 +12,7 @@ func TestScenario1(t *testing.T) {
 	userPosition := 1
 	destination := 20
 	expectedFinalPositions := []int{5, 15, 1, 2, 20}
-
+	fmt.Println(expectedColumn.elevatorsList)
 	chosenColumn, chosenElevator := scenario1()
 
 	if chosenColumn.ID == expectedColumn.ID {
@@ -27,7 +28,7 @@ func TestScenario1(t *testing.T) {
 	}
 
 	var userPickedUp bool
-	if contains(chosenElevator.completedRequestsList, userPosition) {
+	if Contains(chosenElevator.completedRequestsList, userPosition) {
 		t.Log("The user was picked up at its floor")
 		userPickedUp = true
 	} else {
@@ -72,7 +73,7 @@ func TestScenario2(t *testing.T) {
 	}
 
 	var userPickedUp bool
-	if contains(chosenElevator.completedRequestsList, userPosition) {
+	if Contains(chosenElevator.completedRequestsList, userPosition) {
 		t.Log("The user was picked up at its floor")
 		userPickedUp = true
 	} else {
@@ -111,7 +112,7 @@ func TestScenario3(t *testing.T) {
 	}
 
 	var userPickedUp bool
-	if contains(chosenElevator.completedRequestsList, userPosition) {
+	if Contains(chosenElevator.completedRequestsList, userPosition) {
 		t.Log("The user was picked up at its floor")
 		userPickedUp = true
 	} else {
@@ -149,7 +150,7 @@ func TestScenario4(t *testing.T) {
 	}
 
 	var userPickedUp bool
-	if contains(chosenElevator.completedRequestsList, userPosition) {
+	if Contains(chosenElevator.completedRequestsList, userPosition) {
 		t.Log("The user was picked up at its floor")
 		userPickedUp = true
 	} else {
