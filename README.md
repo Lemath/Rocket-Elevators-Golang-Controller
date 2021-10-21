@@ -19,7 +19,7 @@ To launch the tests:
 
 With a fully completed project, you should get an output like:
 
-![Screenshot from 2021-06-15 15-25-10](https://user-images.githubusercontent.com/28630658/122111573-e6ea7380-cded-11eb-95e3-95e0096a1b3a.png)
+![golang_test1](https://user-images.githubusercontent.com/56204810/138209403-3d5e289d-1296-4d8a-b607-817bab6995d1.jpg)
 
 You can also get more details about each test by adding the `-v` flag: 
 
@@ -27,8 +27,7 @@ You can also get more details about each test by adding the `-v` flag:
 
 which should give something like: 
 
-![Screenshot from 2021-06-15 15-25-51](https://user-images.githubusercontent.com/28630658/122111659-fd90ca80-cded-11eb-991b-d9f6fe1d317b.png)
+![golang_test2](https://user-images.githubusercontent.com/56204810/138209419-b43cb11a-b297-4c55-a704-57088e127b2f.jpg)
 
-The test and scenarios files can be left in your final project. The grader will run tests similar to the ones provided.
 
-Of course, make sure to edit this Readme file to describe your own project!
+
